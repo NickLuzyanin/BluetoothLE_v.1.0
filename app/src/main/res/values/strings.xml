@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">BLE не поддержано.</string>
+    <string name="app_name">IoT_water</string>
+    <string name="app_title">Учет воды</string>
+    <string name="menu_scan">Сканирование</string>
+    <string name="menu_stop">Остановка</string>
+    <string name="menu_services">Служба Обновления</string>
+
+    <string name="RSSI">RSSI</string>
+    <string name="menu_about">О компании</string>
+    <string name="menu_qrcode">КУ_ЭР_КОД</string>
+    <string name="rssi">RSSI</string>
+    <string name="address">Address</string>
+    <string name="name">Name</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="left">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Значение"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_charString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Строка" />
+
+    <TextView
+        android:id="@+id/tv_charHex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Hex" />
+
+    <TextView
+        android:id="@+id/tv_charformat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Символ" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Время" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Прочитать"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_write"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Записать"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_notify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/et_notify_resualt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="top"
+            android:hint="Результат уведомления" />
+    </ScrollView>
+
+    <Button
+        android:text="Текущее время"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_03" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tv_current_time2"
+                    android:hint="Текущее значение времени в миллисекундах" android:layout_weight="1"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tv_current_time1"
+                    android:hint="Текущее значение времени  в секундах" android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_current_time"
+                android:hint="Текущее значение времени d HEX"
+                android:layout_weight="1"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_current_time3"
+                android:layout_weight="1"
+                android:hint="Текущее значение времени DD:mm:ss" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_hex_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <RadioButton
+            android:id="@+id/rb_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="字符串" />
+
+        <RadioButton
+            android:id="@+id/rb_hex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="十六进制" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="字节数:0"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/clear_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/save_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+</LinearLayout>
